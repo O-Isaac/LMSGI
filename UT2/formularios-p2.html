@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Practica de la unidad 2 de formularios."
+    />
+    <title>Formulario de registro - Mi web</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulario de registro</h1>
+    </header>
+    <!-- El br es para que quede como la imagen  -->
+    <main>
+      <form action="procesa.php" method="get">
+        <fieldset>
+          <legend>Datos Personales</legend>
+          <br />
+
+          <label>
+            Nombre: <input maxlength="50" type="text" name="nombre" id="name" />
+          </label>
+          <br />
+          <br />
+
+          <label>
+            Apellidos:
+            <input maxlength="50" type="text" name="apel" id="apellidos" />
+          </label>
+          <br />
+          <br />
+
+          <label>
+            Contraseña: <input type="password" name="password" maxlength="8" />
+          </label>
+
+          <label>
+            Edad: <input disabled type="number" name="edad" id="edad" />
+          </label>
+          <br />
+          <br />
+
+          <label>
+            Sexo:
+            <input
+              checked
+              type="radio"
+              name="sexo"
+              id="hombre"
+              value="hombre"
+            />
+            hombre
+          </label>
+
+          <label>
+            <input type="radio" name="sexo" id="mujer" value="mujer" />
+            mujer
+          </label>
+          <br />
+          <br />
+        </fieldset>
+        <br />
+
+        <label>
+          Correo: <input type="email" name="correo" id="correo" />
+        </label>
+        <br />
+        <br />
+
+        <label>
+          Población:
+          <select name="poblacion" id="poblacion">
+            <option value="alicante">Alicante</option>
+            <option value="madrid">Madrid</option>
+            <option selected value="sevilla">Sevilla</option>
+            <option value="valencia">Valencia</option>
+          </select>
+        </label>
+        <br />
+        <br />
+
+        <label>
+          Descripción:
+          <textarea name="desc" id="description" cols="30" rows="4"></textarea>
+        </label>
+        <br />
+        <br />
+
+        <!-- Terms & newletters -->
+        <label>
+          <input type="checkbox" name="masinf" id="newsletter" /> Deseo recibir
+          información sobre novedades y ofertas.
+        </label>
+        <br />
+        <br />
+
+        <label>
+          <input type="checkbox" name="condiciones" id="tos" /> Declaro haber
+          leido y aceptar las condiciones generales del programa y la normativa
+          sobre protección de datos
+        </label>
+        <br />
+        <br />
+
+        <!-- Adjuntar Foto -->
+        <label>
+          Adjuntar foto:
+          <input
+            type="file"
+            name="foto"
+            id="foto"
+            accept="image/png, image/jpg, image/jpeg"
+          />
+        </label>
+        <br />
+        <br />
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar Datos</button>
+      </form>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
