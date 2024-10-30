@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Tags Principales -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>UT2 · P4 · Hastiales de Amsterdam</title>
+    <meta name="title" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubre las maravillas de Amsterdam y adentrate en un viaje inolvidable "
+    />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png" />
+
+    <!-- Open Graph / Facebook -->
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://google.es/" />
+    <meta property="og:title" content="UT2 · P4 · Hastiales de Amsterdam" />
+    <meta
+      property="og:description"
+      content="Descubre las maravillas de Amsterdam y adentrate en un viaje inolvidable"
+    />
+    <meta
+      property="og:image"
+      content="https://img.bekiaviajes.com/ciudades/portada/0000/7-h.jpg"
+    />
+
+    <!-- Twitter -->
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://google.es/" />
+    <meta
+      property="twitter:title"
+      content="UT2 · P4 · Hastiales de Amsterdam"
+    />
+    <meta
+      property="twitter:description"
+      content="Descubre las maravillas de Amsterdam y adentrate en un viaje inolvidable"
+    />
+    <meta
+      property="twitter:image"
+      content="https://img.bekiaviajes.com/ciudades/portada/0000/7-h.jpg"
+    />
+
+    <!-- Pequeño Reset de CSS para hacer la imagenes Responsive -->
+
+    <style>
+      /* Previene Layout Shift CLS */
+      img {
+        max-width: 100%;
+        display: inline-block;
+        aspect-ratio: 4/3;
+        width: 400px;
+        object-fit: contain;
+      }
+
+      .lite_youtube_wrapper {
+        max-width: 100%;
+        width: 700px;
+        aspect-ratio: 16/9;
+        display: inline-block;
+      }
+    </style>
+
+    <!-- Resuelve varios problemas con los iframes de youtube -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="inicio">Hastiales de Amsterdam</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#pico">Pico</a></li>
+        <li><a href="#escalonado">Escalonado</a></li>
+        <li><a href="#campana">Campana</a></li>
+        <li><a href="#promocion">Video Promocional</a></li>
+        <li>
+          <a href="https://www.iamsterdam.com/es">Información y Turismo</a>
+        </li>
+        <li><a href="./solinfo.html">Solicitud de Informacion</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <article>
+          <h2>Los hastiales</h2>
+          <p>
+            Paseando por Amsterdam llaman la atención las terminaciones de las
+            fachadas de las casas, todas parecidas pero todas diferentes.
+          </p>
+          <p>
+            Son los llamados hastiales o piñones, un elemento arquitectónico que
+            remata la fachada y que queda enmarcado por las dos vertientes del
+            tejado. Se trata de un elemento decorativo cuyo estilo fue
+            evolucionando a lo largo del siglo XVII hasta ser sustituidos por
+            balaustradas y cornisas barrocas.
+          </p>
+        </article>
+
+        <article id="pico">
+          <h2>Hastial en pico.</h2>
+          <p>
+            El hastial en pico, o de caño, es el más común en los almacenes del
+            siglo XVII y consiste en una protuberancia rectangular en el extremo
+            del edificio. Hastial escalonado
+          </p>
+
+          <img
+            src="./assets/hastiales-pico-prinsengracht-213.jpg"
+            alt="Imagen del pico de una casa"
+          />
+          <a href="#inicio">
+            <img
+              src="./assets/hastiales-flecha.svg"
+              alt="flecha para volver al inicio"
+            />
+          </a>
+        </article>
+
+        <article id="escalonado">
+          <h2>Escalonado</h2>
+          <p>
+            El hastial escalonado, más ornamentado, se puso de moda en el primer
+            tercio del siglo XVII en las casa particulares. Hastial campana
+          </p>
+
+          <img
+            src="./assets/hastiales-escalonado-singel-2.jpg"
+            alt="Imagen de ornamentado escalonado"
+          />
+          <a href="#inicio">
+            <img
+              src="./assets/hastiales-flecha.svg"
+              alt="flecha para volver inicio"
+            />
+          </a>
+        </article>
+
+        <article id="campana">
+          <h2>Campana</h2>
+          <p>El hastial campana se puso de moda entre 1660 y 1670.</p>
+
+          <img
+            src="./assets/hastiales-campana-prinsengracht-349.jpg"
+            alt="Imagen ornamentado campana"
+          />
+          <a href="#inicio">
+            <img
+              src="./assets/hastiales-flecha.svg"
+              alt="flecha para volver inicio"
+            />
+          </a>
+        </article>
+      </section>
+
+      <section>
+        <article id="promocion">
+          <h2>Video promocional de Ámsterdam</h2>
+          <p>Pequeño video promocional de Ámsterdam</p>
+
+          <!-- Es necesario para el controlar el ancho de este web-component -->
+          <div class="lite_youtube_wrapper">
+            <lite-youtube
+              posterquality="maxresdefault"
+              videoid="B6chYFRUqRw"
+            ></lite-youtube>
+          </div>
+
+          <a href="#inicio">
+            <img src="./assets/hastiales-flecha.svg" alt="flecha" />
+          </a>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      Descubre Amsterdam Página desarrollado por Isaac Zaragoza Mendoza
+      <a href="https://www.iesjuanbosco.es">Visítanos en IES Juan Bosco</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Tags Principales -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UT2 · P4 · Solicitud de Informacion</title>
+    <meta
+      name="description"
+      content="Inicia una Solicitud para descrubir Amsterdam !No esperes mas, viaje a Amsterdam! "
+    />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png" />
+    <!-- Open Graph / Facebook -->
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://google.es/" />
+    <meta property="og:title" content="UT2 · P4 · Solicitud de Informacion" />
+    <meta
+      property="og:description"
+      content="Descubre las maravillas de Amsterdam y adentrate en un viaje inolvidable"
+    />
+    <meta
+      property="og:image"
+      content="https://img.bekiaviajes.com/ciudades/portada/0000/7-h.jpg"
+    />
+
+    <!-- Twitter -->
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://google.es/" />
+    <meta
+      property="twitter:title"
+      content="UT2 · P4 · Hastiales de Amsterdam"
+    />
+    <meta
+      property="twitter:description"
+      content="Descubre las maravillas de Amsterdam y adentrate en un viaje inolvidable"
+    />
+    <meta
+      property="twitter:image"
+      content="https://img.bekiaviajes.com/ciudades/portada/0000/7-h.jpg"
+    />
+
+    <!-- Estilos -->
+    <style>
+      label {
+        display: block;
+        margin-block: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Solicitud de Informacion</h1>
+      <p>
+        Para realizar tu solicitud vamos a necesitar saber un poco acerca de ti.
+      </p>
+    </header>
+    <main>
+      <form method="post" action="mailto:amsterdam@ie.com">
+        <fieldset>
+          <legend>Información Personal</legend>
+
+          <label>
+            Nombre:
+            <input name="nombre" type="text" required max="30" />
+          </label>
+          <label>
+            Apellidos: <input name="apellidos" type="text" required max="30" />
+          </label>
+          <label> E-mail: <input type="email" name="correo" /> </label>
+          <label> Telefono: <input type="tel" name="telefono" /> </label>
+          <label>
+            Edad:
+            <select name="edad">
+              <option value="menor">Menor de 18 años</option>
+              <option value="entre">Entre 18 y 38 años</option>
+              <option value="mayor">Mayor 18 años</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Informacion Adicional</legend>
+          <label>
+            Solicitar mas Informacion:
+            <input name="informacion" type="text" list="ornamentados" />
+          </label>
+
+          <label>
+            Descripción:
+            <textarea
+              name="descripcion"
+              maxlength="255"
+              cols="60"
+              rows="3"
+            ></textarea>
+          </label>
+        </fieldset>
+
+        <label>
+          <input type="checkbox" name="normativa" /> Normativa que recogerá si
+          el usuario está de acuerdo con qué se traten sus datos con la
+          normativa vigente de protección de datos
+        </label>
+
+        <button type="submit">Enviar formulario</button>
+        <button type="reset">Borrar Datos</button>
+      </form>
+    </main>
+
+    <datalist id="ornamentados">
+      <option value="pico">Pico</option>
+      <option value="escalonado">Escalonado</option>
+      <option value="campana">Campana</option>
+    </datalist>
+  </body>
+</html>
