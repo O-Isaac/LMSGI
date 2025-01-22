@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'pristine';
+    src: url('/assets/fonts/pristina.ttf') format('truetype');
+}
+
+.main {
+    width: 100%;
+    background: url(/assets/images/panoramica1.jpg) no-repeat center/cover;
+    height: 365px;
+    margin-block-end: 2rem;
+    position: relative;
+
+    .visor {
+        position: absolute;
+        height: 100%;
+        width: 32%;
+        background-color: var(--bg-half-black);
+        right: 0;
+        padding: 20px;
+
+        p {
+            color: white;
+            font-size: medium;
+            margin-block: 1rem;
+            font-family: 'pristine';
+            font-size: larger;
+        }
+    }
+
+    .visor__title {
+        font-size: large;
+        font-variant: small-caps;
+        text-align: center;
+        color: orange;
+        border-bottom: 1px solid rgba(255,255,255, 25%);
+        margin-block-end: 1rem;
+    }
+
+    /* Media para visor */
+    @media (max-width: 767px)  {
+      .visor {
+        width: 50dvw;
+      }
+    }
+
+    /* Manejo de texto cuando movil esta vertical  */
+    @media (max-width: 767px) and (orientation: portrait) {
+      .visor p {
+        font-size: small;
+      }   
+    }
+}
