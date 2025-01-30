@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html, body {
+    font-family: system-ui;
+    background-color: #353535;
+}
+
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.fila1 {
+    
+    .encabezado {
+        text-align: center;
+        font-size: x-large;
+        line-height: 1.4;
+        font-variant: small-caps;
+        font-weight: 400;
+        height: auto;
+        color: orange;
+        border: 2px solid orange;
+    }
+
+    /* Si lo hacia con inline-block y float ocasionaba desborde por eso lo hecho con flex*/
+    .primera, .con-flex {
+        padding: 0.5rem;
+        display: flex;
+        gap: 0.5rem;
+
+        border-inline: 2px solid orange;
+        border-bottom: 2px solid orange;
+    }
+
+    
+
+    .caja {
+        display: inline-block;
+        height: auto;
+        width: 25%;
+        padding: 0.5rem;
+
+        &.rojo {
+            background-color: red;
+        }
+        
+        &.verde {
+            background-color: green;
+        }
+    
+        &.azul {
+            background-color: blue;
+        }
+        &.rosa {
+            background-color: pink;
+        }
+    }
+
+}
+
+.fila {
+    border: 1px solid orange;
+    height: auto;
+    
+    .encabezado {
+        display: inline-flex;
+        flex-direction: column;
+        width: 13%;
+        
+        
+        div {
+            font-size: x-large;
+            text-align: center;
+            font-variant: small-caps;
+            color: orange;
+            font-weight: 400;
+        }
+
+        .caja {
+            width: auto;
+            height: auto;
+            text-align: center;
+            font-size: x-large;
+            font-variant: small-caps;
+            color: orange;
+            padding: 0.3rem;
+            border: 1px solid orange;
+            
+            &.rojo {
+                background-color: red;
+            }
+            
+            &.verde {
+                background-color: green;
+            }
+        
+            &.azul {
+                background-color: blue;
+            }
+            &.rosa {
+                background-color: pink;
+            }
+        }
+    }
+
+    & > section {
+        float: right;
+        display: block;
+        width: 87%;
+        padding: 0.3rem;
+
+        .caja {
+            padding: 1rem;
+            color: white;
+            margin-block: 0.2rem;
+            border: 1px solid orange;
+
+            &.rojo {
+                background-color: red;
+            }
+            
+            &.verde {
+                background-color: green;
+            }
+        
+            &.azul {
+                background-color: blue;
+            }
+            &.rosa {
+                background-color: pink;
+            }
+
+            p {
+                margin-block: 1rem;
+            }
+        }
+    }
+
+
+    & > section.con-flex {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .encabezado.con-flex {
+        font-size: x-large;
+        text-align: center;
+        font-variant: small-caps;
+        color: orange;
+        font-weight: 400;
+
+        display: inline-flex;
+        flex-direction: column;
+    }
+}
